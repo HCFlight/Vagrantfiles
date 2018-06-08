@@ -25,6 +25,9 @@ dpkg --add-architecture i386
 apt-get update
 
 apt-get install -y zsh vim build-essential ack-grep git android-tools-adb curl cmake libc6:i386 libncurses5:i386 libstdc++6:i386
+apt-get install -y unzip libtool htop python3-dev python3-pip
+
+pip3 install thefuck
 
 mv /tmp/repo /usr/bin/repo && chmod 775 /usr/bin/repo
 
