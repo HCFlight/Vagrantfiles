@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", type: "dhcp"
 
   # 使用 nfs 速度更快一些
-  config.vm.synced_folder ".", "/vagrant", type: "nfs"
+  config.vm.synced_folder "../share", "/vagrant", type: "nfs"
 
   # 初始环境的 Setup
   config.vm.provision "file", source: "./repo", destination: "/tmp/repo"
