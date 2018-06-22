@@ -19,5 +19,5 @@ append_when_not_found() {
 }
 
 append_when_not_found 'alias ack="ack-grep"'        /home/vagrant/.zshrc
-append_when_not_found 'export LC_ALL="en_US.UTF-8"' /home/vagrant/.zshrc
+append_when_not_found 'export LC_ALL="C.UTF-8"' /home/vagrant/.zshrc
 append_when_not_found 'eval $(thefuck --alias)'     /home/vagrant/.zshrc
