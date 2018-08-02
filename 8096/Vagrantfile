@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   # 基础镜像
   config.vm.box = "ubuntu/xenial64"
+  config.disksize.size = '40GB'
 
   # 配置网络
   config.vm.network "private_network", type: "dhcp"
