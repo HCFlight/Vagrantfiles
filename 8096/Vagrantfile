@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   # 基础镜像
   config.vm.box = "ubuntu/xenial64"
+  config.disksize.size = '40GB'
 
   # 配置网络
   config.vm.network "private_network", type: "dhcp"
@@ -20,6 +21,7 @@ Vagrant.configure("2") do |config|
     vb.customize ["usbfilter", "add", "0", "--target", :id, "--name", "APQ8096", "--vendorid", "0x05c6", "--productid", "0x901d"]
     vb.customize ["usbfilter", "add", "0", "--target", :id, "--name", "QUSB__BULK", "--vendorid", "0x05c6", "--productid", "0x9008"]
     vb.customize ["usbfilter", "add", "0", "--target", :id, "--name", "Hover Camera", "--vendorid", "0x2cc0", "--productid", "0x0101"]
+    vb.customize ["usbfilter", "add", "0", "--target", :id, "--name", "Qualcomm", "--vendorid", "0x05c6", "--productid", "0x9025"]
 
     vb.memory = 6144
 
