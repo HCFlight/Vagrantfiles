@@ -21,3 +21,23 @@ cd Vagrantfiles/8074
 
 vagrant up
 ```
+
+## 进入虚拟机
+
+```
+cd Vagrantfiles/8074
+
+vagrant ssh 
+```
+
+## 关闭虚拟机
+
+```
+cd Vagrantfiles/8074
+
+vagrant halt
+```
+
+## Vagrantfiles/share 文件夹
+虚拟机与主机的共用文件主，将文件移动到 `Vagrantfiles/share` 目录，可以在虚拟机中的 `/home/vagrant/workspace` 中发现
+
