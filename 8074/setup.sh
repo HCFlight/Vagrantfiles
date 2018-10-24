@@ -27,6 +27,7 @@ apt-get update
 apt-get install -y zsh vim build-essential ack-grep git android-tools-adb curl cmake libc6:i386 libncurses5:i386 libstdc++6:i386
 apt-get install -y unzip libtool htop python3-dev python3-pip python-setuptools python-dev build-essential python-pip
 apt-get install -y docker.io
+sudo locale-gen zh_CN.UTF-8
 
 #pip3 install thefuck
 
