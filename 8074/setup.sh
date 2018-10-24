@@ -28,6 +28,9 @@ apt-get install -y zsh vim build-essential ack-grep git android-tools-adb curl c
 apt-get install -y unzip libtool htop python3-dev python3-pip python-setuptools python-dev build-essential python-pip
 apt-get install -y docker.io
 sudo locale-gen zh_CN.UTF-8
+#修改 docker sudo 权限
+sudo gpasswd -a vagrant docker
+sudo service docker restart
 
 #pip3 install thefuck
 
