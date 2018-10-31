@@ -17,7 +17,7 @@
 clone 当前项目，在有 Vagrantfile 的目录下，执行:
 
 ```
-git clone https://github.com/YuanfuC/Vagrantfiles.git
+git clone https://github.com/HCFlight/Vagrantfiles.git
 
 cd Vagrantfiles/8074
 
